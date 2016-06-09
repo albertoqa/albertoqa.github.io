@@ -1,0 +1,28 @@
+{
+  "name": "albertoquesada",
+  "version": "1.0.0",
+  "description": "Personal Page",
+  "main": "app.min.js",
+  "dependencies": {
+    "grunt-cli": "^1.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-ng-annotate": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertoqa/albertoqa.github.io.git"
+  },
+  "author": "Alberto Quesada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albertoqa/albertoqa.github.io/issues"
+  },
+  "homepage": "http://albertoqa.github.io/"
+}
