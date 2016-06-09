@@ -1,5 +1,21 @@
-var scotchApp = angular.module('albertoquesadaApp', []);
+var albertoquesadaApp = angular.module('albertoquesadaApp', ['ngRoute']);
 
-scotchApp.controller('mainController', function($scope) {
-  $scope.message = 'Everyone come and see how good I look!';
-});
+albertoquesadaApp.config(function($routeProvider) {
+  $routeProvider
+    .when('/', {
+      templateUrl : 'home/home.view.html',
+      controller: 'homeCtrl',
+      controllerAs: 'vm'
+    })
+    .when('/about', {
+      templateUrl: '/common/views/genericText.view.html',
+      controller: 'aboutCtrl',
+      controllerAs: 'vm'
+    })
+    .otherwise({redirectTo: '/'});
+
+})
+
+angular
+  .module('albertoquesadaApp')
+  .config(['$routeProvider', config]);
