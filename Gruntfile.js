@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     //grunt task configuration will go here
     concat: {
       js: { //target
-        src: ['./js/app.js', './home/home.controller.js'],
+        src: ['./js/app.js', './home/home.controller.js', './common/directive/navigation/navigation.directive.js'],
         dest: './tmp/app.js'
       }
     },
