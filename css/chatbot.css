@@ -1,0 +1,108 @@
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background-color: rgba(58,179,188,0.98);
+  z-index: 9999;
+  border: 0;
+  font-size: 15px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-default .navbar-brand {
+  font-size: 20px !important;
+  color: #ffffff;
+  float:none;
+}
+.navbar-default .navbar-brand:hover {
+  color: #e1e1e1;
+}
+.navbar-brand {
+  color: #ffffff;
+}
+
+.inputChat {
+  padding-bottom: 20px;
+  background-color: #f3f3f3;
+}
+
+.bg-grey {
+  background-color: #f3f3f3;
+}
+
+#messageInput {
+  width: 400px;
+  height: 40px;
+}
+
+.form-control:focus {
+  border-color: #3BB3BC;
+  box-shadow: inset 0 1px 1px rgba(106, 123, 141, 0.075), 0 0 8px rgba(106, 123, 141, 0.6);
+}
+.form-control {
+  border-color: #3BB3BC;
+}
+
+#table {
+	display: table;
+	max-width: 900px;
+	margin: auto !important;
+  padding-bottom: 100px;
+}
+
+#cell {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	padding: 15px;
+}
+
+section {
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  font-family: "Lato";
+  font-size: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  overflow: scroll;
+}
+#me {
+  margin: 0;
+}
+#dd {
+  max-width: 70%;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+
+.from-me {
+  position: relative;
+  padding: 6px 12px;
+  color: white;
+  background: #0B93F6;
+  border-radius: 16px;
+  float: right;
+  text-align: right;
+  clear: both;
+}
+.from-them {
+  position: relative;
+  padding: 6px 12px;
+  background: #E5E5EA;
+  border-radius: 16px;
+  color: black;
+  float: left;
+  text-align: left;
+  clear: both;
+}

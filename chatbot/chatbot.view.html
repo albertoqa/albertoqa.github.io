@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/css/chatbot.css">
+
+<div class="wrapper bg-grey">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header text-center">
+        <a class="navbar-brand" href="/#chatbot"><b>chatbot</b></a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="table">
+    <div id="cell">
+      <section>
+        <div ng-repeat="message in vm.messages">
+          <div ng-switch="message.from">
+            <div ng-switch-when="true">
+              <div id="dd" class="from-me">
+                <p id="me">{{message.text}}</p>
+              </div>
+            </div>
+            <div ng-switch-when="false">
+              <div id="dd" class="from-them">
+                <p id="me">{{message.text}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default navbar-fixed-bottom inputChat" id=footer>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <form id="messageIn">
+          <input type="text" class="center-block form-control" id="messageInput" placeholder="Message..." ng-model="newMessage" ng-model-instant>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+</div>

@@ -14,6 +14,11 @@
       controller : 'aboutCtrl',
       controllerAs : 'vm'
     })
+    .when('/chatbot', {
+      templateUrl : '/chatbot/chatbot.view.html',
+      controller : 'chatbotCtrl',
+      controllerAs : 'vm'
+    })
     .otherwise({redirectTo: '/'});
   }
 

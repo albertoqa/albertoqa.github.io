@@ -8,6 +8,7 @@ module.exports = function(grunt) {
           './js/app.js',
           './home/home.controller.js',
           './about/about.controller.js',
+          './chatbot/chatbot.controller.js',
           './common/directive/headerGeneric/headerGeneric.directive.js',
           './common/directive/footerGeneric/footerGeneric.directive.js'
         ],
