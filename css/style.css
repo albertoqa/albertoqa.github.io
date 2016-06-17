@@ -216,3 +216,7 @@ h2 {
 .lead p {
     margin-bottom: 0
 }
+
+.modal {
+    padding-top: 100px; /* Location of the box */
+}

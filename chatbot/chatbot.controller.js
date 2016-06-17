@@ -16,6 +16,16 @@
       {q:"How long will it take to drive to Asturias from Granada?", a:"8 ours my friend!"}
     ];
 
+    var randomAnswers = [
+      {a:"I hear you!"},
+      {a:"Continue, I'm listening."},
+      {a:"Very interesting conversation!"},
+      {a:"Tell me more..."},
+      {a:"Are you sure about that?"},
+      {a:"Maybe yes maybe no..."},
+      {a:"We will see..."}
+    ]
+
     vm.messages = [];
     vm.messages.push({text:"Hello, my name is Alberto Quesada.", from:true});
     vm.messages.push({text:"What would you like to know?", from:true});
@@ -38,13 +48,12 @@
           vm.messages.push({text:value.a, from:true});
           found = true;
         }
-    });
-      if(!found) {
-        vm.messages.push({text:"Sorry, I don't know how to answer that yet...", from:true});
-        found = false;
-      }
+        if(!found) {
+          vm.messages.push({text:"Sorry, I don't know how to answer that yet...", from:true});
+          found = false;
+        }
+      });
     }
-
 
   }
 
