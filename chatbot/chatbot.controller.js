@@ -27,8 +27,8 @@
     ]
 
     vm.messages = [];
-    vm.messages.push({text:"Hello, my name is Alberto Quesada.", from:true});
-    vm.messages.push({text:"What would you like to know?", from:true});
+    vm.messages.push({text:"Hello, my name is Alberto Quesada.", from:true, link:false});
+    vm.messages.push({text:"What would you like to know?", from:true, link:false});
 
     vm.getTotalMessages = function () {
       return vm.messages.length;
@@ -36,25 +36,30 @@
 
     $('#messageIn').submit(function(event){
       event.preventDefault();
-      vm.messages.push({text:$scope.newMessage, from:false});
-      vm.answerToUser($scope.newMessage);
+      vm.messages.push({text:$scope.newMessage, from:false}); // push user message to the chat
+      vm.answerToUser($scope.newMessage); // search for a response
       $scope.newMessage = "";
     });
 
     var found = false;
     vm.answerToUser = function(message) {
-      angular.forEach(answers, function(value, key) {
-        if (value.q === message) {
-          vm.messages.push({text:value.a, from:true});
-          found = true;
-        }
+      if(message.match(/google[]*/i)) {   // if message starts with google, search in google!
+        var query = message.replace("google ", "");
+        var gs = "http://www.google.com/search?q=" + query
+        vm.messages.push({text:gs, from:true, link:true});
+      } else {
+        angular.forEach(answers, function(value, key) {
+          if (value.q === message) {
+            vm.messages.push({text:value.a, from:true, link:false});
+            found = true;
+          }
+        });
         if(!found) {
-          vm.messages.push({text:"Sorry, I don't know how to answer that yet...", from:true});
+          vm.messages.push({text:"Sorry, I don't know how to answer that yet...", from:true, link:false});
           found = false;
         }
-      });
+      }
     }
-
   }
 
 })();

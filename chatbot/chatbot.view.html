@@ -17,8 +17,17 @@
         <div ng-repeat="message in vm.messages">
           <div ng-switch="message.from">
             <div ng-switch-when="true">
-              <div id="dd" class="from-me">
-                <p id="me">{{message.text}}</p>
+              <div ng-switch="message.link">
+                <div ng-switch-when="false">
+                  <div id="dd" class="from-me">
+                    <p id="me">{{message.text}}</p>
+                  </div>
+                </div>
+                <div ng-switch-when="true">
+                  <div id="dd" class="from-me">
+                    <p>I don't know the answer... but maybe google does!</p><a id="me" href={{message.text}}><b>Click here!</b></a>
+                  </div>
+                </div>
               </div>
             </div>
             <div ng-switch-when="false">

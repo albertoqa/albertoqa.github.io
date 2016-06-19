@@ -96,6 +96,11 @@ section {
   text-align: right;
   clear: both;
 }
+
+.from-me a {
+  color:white;
+}
+
 .from-them {
   position: relative;
   padding: 6px 12px;
