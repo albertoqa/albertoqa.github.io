@@ -187,7 +187,8 @@ body {
   color: #3A4145;
   font-feature-settings: 'kern' 1;
   text-rendering: geometricPrecision;
-  text-align: center; }
+  text-align: center;
+  background: #fff url("../media/img/bg-pattern.png"); }
 
 ::-moz-selection {
   background: #D6EDFF; }
@@ -560,7 +561,7 @@ blockquote {
   margin-bottom: 40px;
   padding-top: 10rem;
   background-size: cover;
-  background-position: center; }
+  background-position: bottom; }
   .main-header.has-cover .page-title,
   .main-header.has-cover .page-title a,
   .main-header.has-cover .page-description,

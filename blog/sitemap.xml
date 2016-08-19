@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://albertoquesada.com/blog/blog/blog/readme/Readme</loc>
+<loc>http://albertoquesada.com/blog/blog/blog/travel/Backpacking</loc>
+<lastmod>2016-08-19T15:28:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://albertoquesada.com/blog/blog/blog/tutorial/Readme</loc>
 <lastmod>2016-06-08T17:25:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://albertoquesada.com/blog/blog/blog/features/Features</loc>
+<loc>http://albertoquesada.com/blog/blog/blog/tutorial/Features</loc>
 <lastmod>2016-06-07T12:10:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://albertoquesada.com/blog/blog/blog/features/YAML-Features</loc>
+<loc>http://albertoquesada.com/blog/blog/blog/tutorial/YAML-Features</loc>
 <lastmod>2016-04-05T23:40:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://albertoquesada.com/blog/blog/blog/features/Content</loc>
+<loc>http://albertoquesada.com/blog/blog/blog/tutorial/Content</loc>
 <lastmod>2016-03-05T00:00:00+01:00</lastmod>
 </url>
 <url>
@@ -24,11 +28,5 @@
 </url>
 <url>
 <loc>http://albertoquesada.com/blog/blog/</loc>
-</url>
-<url>
-<loc>http://albertoquesada.com/blog/blog/offline-warning/</loc>
-</url>
-<url>
-<loc>http://albertoquesada.com/blog/blog/offline</loc>
 </url>
 </urlset>
