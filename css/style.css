@@ -58,6 +58,11 @@ span.first {
 html, body {
 	height: 100%;
 }
+
+body {
+  background: #fff url("../img/bg-pattern.png")
+}
+
 .wrapper {
 	min-height: 100%;
 	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
