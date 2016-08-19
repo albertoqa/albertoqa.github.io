@@ -4,7 +4,7 @@
     {
         "title": "Theme Installation and Usage",
         "category": "Readme",
-        "url": "/blog/readme/Readme",
+        "url": "/blog/blog/readme/Readme",
         "tags": ["Jekyll","Theme","GitHub","Installation"],
         "date": "2016-06-08 17:25:00 +0200",
         "language": "en"
@@ -15,7 +15,7 @@
     {
         "title": "Theme Features",
         "category": "Features",
-        "url": "/blog/features/Features",
+        "url": "/blog/blog/features/Features",
         "tags": ["Jekyll","Theme","GitHub","Installation"],
         "date": "2016-06-07 12:10:00 +0200",
         "language": "en"
@@ -26,7 +26,7 @@
     {
         "title": "YAML Custom Features",
         "category": "Features",
-        "url": "/blog/features/YAML-Features",
+        "url": "/blog/blog/features/YAML-Features",
         "tags": ["Jekyll","YAML","Features","Explained"],
         "date": "2016-04-05 23:40:00 +0200",
         "language": "en"
@@ -37,7 +37,7 @@
     {
         "title": "This post demonstrates post content styles",
         "category": "Features",
-        "url": "/blog/features/Content",
+        "url": "/blog/blog/features/Content",
         "tags": ["Jekyll","Content","Demo"],
         "date": "2016-03-05 00:00:00 +0100",
         "language": "en"
