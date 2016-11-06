@@ -1,0 +1,26 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "pooleparty/variables";
+
+@import "pooleparty/type";
+@import "pooleparty/table";
+@import "pooleparty/footnotes";
+@import "pooleparty/code";
+@import "pooleparty/footer";
+@import "pooleparty/masthead";
+@import "pooleparty/posts";
+@import "pooleparty/pagination";
+@import "pooleparty/related";
+
+@import "hydejack/base";
+@import "hydejack/sidebar";
+@import "hydejack/aside";
+@import "hydejack/drawer";
+@import "hydejack/social";
+@import "hydejack/katex";
+@import "hydejack/archive";
+
+@import "jekyll-github";
