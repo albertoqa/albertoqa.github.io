@@ -1,0 +1,37 @@
+<ul>
+{% for link in include.social %}
+  {% assign platform = link[0] %}
+  {% assign username = link[1] %}
+
+  {% if platform == "google" %}
+    {% assign url = "https://plus.google.com/" | append: username %}
+    {% include social-list-item.html platform=platform url=url %}
+  {% endif %}
+
+  {% if platform == "github" %}
+    {% assign url = "https://github.com/" | append: username %}
+    {% include social-list-item.html platform=platform url=url %}
+  {% endif %}
+
+  {% if platform == "npm" %}
+    {% assign url = "https://npmjs.com/~" | append: username %}
+    {% include social-list-item.html platform=platform url=url %}
+  {% endif %}
+
+  {% if platform == "hackernews" %}
+    {% assign url = "https://news.ycombinator.com/user?id=" | append: username %}
+    {% include social-list-item.html platform=platform url=url %}
+  {% endif %}
+
+  {% if platform == "linkedin" %}
+    {% assign url = "https://www.linkedin.com/in/" | append: username %}
+    {% include social-list-item.html platform=platform url=url icon='linkedin2'%}
+  {% endif %}
+
+  {% if platform == "stackoverflow" %}
+    {% assign url = "http://stackoverflow.com/users/" | append: username %}
+    {% include social-list-item.html platform=platform url=url %}
+  {% endif %}
+
+{% endfor %}
+</ul>
